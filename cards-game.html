@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joker Mind Game – Sidhu Moose Wala Edition</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+</audio>
+
+<div class="app">
+<header>
+<div class="controls">
+    <h3 style="font-size:.8rem;color:var(--cyan); flex: 1.5;">L- <span id="level">1</span></h3>
+    <button id="songBtn">SONG OFF 🎵</button>
+    <button id="sfxBtn">SFX OFF 🔊</button>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-box"><label>MOVES</label><span id="moves">0</span></div>
+    <div class="stat-box"><label>TIME</label><span id="time">00:00</span></div>
+    <div class="stat-box"><label>SCORE</label><span id="score">0</span></div>
+    <div class="stat-box"><label>STATUS</label><span>PLAY</span></div>
+</div>
+</header>
+
+<div id="board" class="board"></div>
+</div>
+
+<div class="modal" id="winModal">
+<div class="modal-content">
+<h1 id="resultText" style="color:var(--gold)">GOOD 👍</h1>
+<button id="nextLevel" style="width:100%;margin-top:18px">NEXT LEVEL</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
